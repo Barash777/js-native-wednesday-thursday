@@ -228,7 +228,7 @@ console.log('callPrivateMethod', a.callPrivateMethod())
 }*/
 
 
-function superSum(n: number) {
+/*function superSum(n: number) {
     if (n <= 0) {
         return 0
     }
@@ -237,7 +237,7 @@ function superSum(n: number) {
         if (args.length >= n) {
             return args.slice(0, n).reduce((acc, c) => acc + c)
         } else {
-            return function pass(/*this: number[],*/ ...args2: number[]) {
+            return function pass(/!*this: number[],*!/ ...args2: number[]) {
                 console.log('ELSE: args.length = ', args.length, ', args[0] = ', args[0], ', n = ', n,
                     ', args2.length = ', args2.length, ', args2[0] = ', args2[0])//, ', this = ', this)
                 return curried.apply(null, args.concat(args2));
@@ -257,7 +257,7 @@ console.log(superSum(3)(2, 5, 3), 10)
 // @ts-ignore
 console.log(superSum(3)(2, 5)(3), 10)
 // @ts-ignore
-console.log(superSum(3)(2, 5)(3, 9), 10)
+console.log(superSum(3)(2, 5)(3, 9), 10)*/
 
 // P.S. типизируйте только аргументы, а при вызове функции используйте @ts-ignore
 
