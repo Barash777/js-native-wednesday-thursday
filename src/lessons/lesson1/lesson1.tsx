@@ -7,7 +7,7 @@ import CurrencyExchangeContainer from '../../containers/CurrencyExchangeContaine
 // https://xsltdev.ru/react/redux/intro/
 
 // Typescript genetic
-// https://habr.com/ru/post/455473/
+// +++ https://habr.com/ru/post/455473/
 // https://habr.com/ru/company/ruvds/blog/426729/
 
 // Typescript from zero + typescript generic (English video)
@@ -21,10 +21,10 @@ import CurrencyExchangeContainer from '../../containers/CurrencyExchangeContaine
 
 const Lesson1: React.FunctionComponent = () => {
     return (
-    <React.Fragment>
-        <CurrencyExchangeContainer />
-    </React.Fragment>
-  );
+        <React.Fragment>
+            <CurrencyExchangeContainer/>
+        </React.Fragment>
+    );
 };
 
 export default Lesson1;
