@@ -14,7 +14,7 @@ import CurrencyExchangeContainer from '../../containers/CurrencyExchangeContaine
 // https://www.youtube.com/watch?v=3d9XqFmCmQw
 
 // Container component
-// https://habr.com/ru/company/ruvds/blog/446206/
+// +++ https://habr.com/ru/company/ruvds/blog/446206/
 
 // Dispatch
 // https://react-redux.js.org/using-react-redux/connect-mapdispatch
