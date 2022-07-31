@@ -244,6 +244,23 @@ console.log('callPrivateMethod', a.callPrivateMethod())
             }
         }
     };
+}*/
+
+function superSum(a: number) {
+    if (a <= 0) return 0
+
+    let _args: number[] = []
+
+    const carry = (...args: number[]) => {
+        _args = [..._args, ...args]
+        if (_args.length >= a) {
+            // _args.length = a
+            return _args.reduce((acc: any, number) => acc + number)
+        }
+        return carry
+    }
+
+    return carry
 }
 
 // @ts-ignore
@@ -257,7 +274,7 @@ console.log(superSum(3)(2, 5, 3), 10)
 // @ts-ignore
 console.log(superSum(3)(2, 5)(3), 10)
 // @ts-ignore
-console.log(superSum(3)(2, 5)(3, 9), 10)*/
+console.log(superSum(3)(2, 5)(3, 9), 10)
 
 // P.S. типизируйте только аргументы, а при вызове функции используйте @ts-ignore
 
